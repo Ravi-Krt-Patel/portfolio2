@@ -726,7 +726,7 @@ section._skills .chart-wrap .chart .doughnut div.per-wrap .per {
   color: #3e7c17;
 }
 .doughnut._express .language {
-  color: #8E05C2;
+  color: #8e05c2;
 }
 .doughnut._reactjs .language {
   color: #2f86a6;
@@ -916,7 +916,7 @@ section._skills .skill-wrap._wrap02 .img-wrap li img {
   background-position: 0% 0%;
 }
 .mockup._kidgao {
-  background: url(../img/modal_pf/kidgaro.png);
+  background: url(../img/travel_tech.png);
   background-size: 100%;
   background-position: 0% 0%;
 }
@@ -1403,7 +1403,6 @@ section._skills .skill-wrap._wrap02 .img-wrap li img {
   }
 }
 
-/*모바일 상태 메뉴호버 제거*/
 @media (hover: hover) {
   header .top-gnb .pc-menu ul li:hover:after {
     width: 100%;

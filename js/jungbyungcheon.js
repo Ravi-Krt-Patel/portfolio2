@@ -100,14 +100,14 @@ $(function () {
         var tabRel = $(this).find('span').text();
         var dataTab = '#' + $(this).attr('data-tab');
 
-        // 주소부분 텍스트 변경 및 내용 show
+
         $('.tab-rel-wrap .tab-rel').text(tabRel);
         $(dataTab).siblings().removeClass('active').hide();
         $(dataTab).addClass('active').fadeIn();
         var tabIndex = $(this).index();
         var barLength = $(dataTab).find('.bar-wrap span').length - 1;
 
-        //각 tab별 bar 크기 조정
+
         $('.tab-content').each(function () {
             var barWidth = $(this).find('.bar-wrap span');
             if (barLength > tabIndex) {
@@ -120,7 +120,7 @@ $(function () {
                 barWidth.eq(tabIndex - 1).delay(200).animate({ width: '60%' }, 600).stop();
             }
         })
-        // #tab03 mbti 각 bar 크기 함수  
+
         if ($('#tab03').hasClass("active") === true) {
             $('.caption .bar').each(function () {
                 var rightBar = $(this).find('._right').text().substring(0, 2);
@@ -137,51 +137,47 @@ $(function () {
         }
     })
 
-    //차트이벤트
+
     var f = true;
     var chartAni = function () {
-        //scroll 기준점
+
         var here = $(window).scrollTop();
         var chartTop = $('#skills').offset().top - 300;
         var maxTop = $('#portfolio').offset().top - 300;
         if (here >= chartTop && here <= maxTop) {
-            //text 숫자증가가 반복실행되어 이중IF문 사용 
+
             if (f == true) {
-                //각차트 each
+
                 $('.doughnut').each(function () {
 
                     var gauge = $(this).find('.gauge');
                     var chartEl = $(this).find('.per');
                     var per = chartEl.attr('data-per');
-                    //해당 차트 데이터값에 비율계산 80 -> 0.2
+
                     var val = (100 - per) / 100;
-                    //r=45기준 2*pi*r = 282.7 기준 퍼센트게이지 채우기
+
                     gauge.css({ 'stroke-dashoffset': 282.7 * val });
-                    //퍼센트 숫자 증가
+
                     $({ num: 0 }).animate({ num: per }, {
                         duration: 1000,
-                        // step: function () {
-                        //     chartEl.text(Math.round(this.num) + '');
-                        //     //숫자증가끝나고 이중if문 false로 이벤트중단
-                        //     f = false;
-                        // }
+
                     })
                 })
             }
         }
     }
 
-    //포폴
+
     var portfolio = function () {
         var itemEl = $('.js-portfolio .item-wrap li');
         var listEl = $('.portfolio-wrap .item-wrap li');
         var modalEl = $('.modal-popup-wrap .item-modal-wrap li');
-        //리스트숫자
+
         itemEl.each(function (eq) {
             var listNum = eq + 1 + '.'
             $(this).find('.li-num').text('0' + listNum);
         })
-        //모달팝업
+
         listEl.each(function (eq2) {
             $(this).find('button').click(function () {
                 $('body').addClass('hidden');
@@ -219,7 +215,7 @@ $(function () {
         headerFixed();
         chartAni();
     });
-    //메뉴클릭시 이동중 off 하기위한 중복 on
+
     $(window).on('load scroll', onOff);
     // $(window).resize(function(){
     //     moblieJs();
