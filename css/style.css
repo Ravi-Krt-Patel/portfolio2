@@ -259,7 +259,7 @@ section._home .svg-wrap svg text {
   animation: home_stroke 1.4s linear forwards;
 }
 section._home .svg-wrap svg text tspan {
-  animation: home_fill 1.4s ease-out reverse forwards;
+  animation: home_fill 3s ease-out reverse forwards;
 }
 section._home .svg-wrap svg text tspan:first-child {
   fill: #fc5230;
