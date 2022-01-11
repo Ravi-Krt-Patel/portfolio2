@@ -304,6 +304,20 @@ section._about .tab-wrap {
   margin: 0 auto;
 }
 
+.resume_button {
+  width: 20%;
+  height: 5rem;
+  background-color: #49b9ff;
+  color: white;
+  font-size: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0.3rem 0rem 2rem #49b9ff;
+}
+.resume_button:hover {
+  background-color: #fc5230;
+  box-shadow: 0.3rem 0rem 2rem #fc5230;
+}
+
 .tab-wrap .list-wrap {
   width: 100%;
   height: 44px;
@@ -1086,7 +1100,8 @@ section._skills .skill-wrap._wrap02 .img-wrap li img {
 .my_icon {
   color: #49b9ff;
   font-size: 250%;
-  margin: 30%;
+  margin-left: 30%;
+  margin-right: 30%;
   /* margin-top: 30%; */
 }
 .my_title {
@@ -1097,7 +1112,8 @@ section._skills .skill-wrap._wrap02 .img-wrap li img {
 }
 
 .div_margin {
-  margin: 20%;
+  margin-right: 20%;
+  margin-left: 20%;
 }
 .my_icon:hover {
   color: #fc5230;
