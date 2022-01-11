@@ -1087,13 +1087,17 @@ section._skills .skill-wrap._wrap02 .img-wrap li img {
   color: #49b9ff;
   font-size: 250%;
   margin: 30%;
-  margin-top: 30%;
+  /* margin-top: 30%; */
 }
 .my_title {
   color: #49b9ff;
 }
 .my_title:hover {
   color: #fc5230;
+}
+
+.div_margin {
+  margin: 20%;
 }
 .my_icon:hover {
   color: #fc5230;
