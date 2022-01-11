@@ -253,10 +253,10 @@ section._home .svg-wrap svg {
 section._home .svg-wrap svg text {
   font-size: 6rem;
   stroke-width: 1px;
-  stroke-dasharray: 326px;
+  stroke-dasharray: 250px;
   text-anchor: middle;
   dominant-baseline: middle;
-  animation: home_stroke 1.4s linear forwards;
+  animation: home_stroke 2s linear forwards;
 }
 section._home .svg-wrap svg text tspan {
   animation: home_fill 3s ease-out reverse forwards;
