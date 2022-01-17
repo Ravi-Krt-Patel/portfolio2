@@ -528,6 +528,32 @@ section._about .tab-wrap .tab-content._strength .img-wrap img {
   height: auto;
   margin: 0 auto;
 }
+.social_midia_g {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  width: 30%;
+  margin: auto;
+}
+@media (max-width: 600px) {
+  .social_midia_g {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    width: 50%;
+    margin: auto;
+  }
+}
+@media (max-width: 412px) {
+  .social_midia_g {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    width: 80%;
+    margin: auto;
+  }
+}
+
 section._about .tab-wrap .tab-content._strength .tab-text {
   max-width: 800px;
   margin: 0 auto;
