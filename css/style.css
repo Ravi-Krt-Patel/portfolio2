@@ -554,6 +554,34 @@ section._about .tab-wrap .tab-content._strength .img-wrap img {
   }
 }
 
+.express_logo {
+  width: 110px;
+}
+.next_logo {
+  width: 80px;
+}
+
+@media (max-width: 600px) {
+  .next_logo {
+    width: 60px;
+  }
+}
+@media (max-width: 412px) {
+  .next_logo {
+    width: 50px;
+  }
+}
+@media (max-width: 600px) {
+  .express_logo {
+    width: 90px;
+  }
+}
+@media (max-width: 412px) {
+  .express_logo {
+    width: 70px;
+  }
+}
+
 section._about .tab-wrap .tab-content._strength .tab-text {
   max-width: 800px;
   margin: 0 auto;
