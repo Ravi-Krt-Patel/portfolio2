@@ -939,6 +939,13 @@ section._skills .skill-wrap._wrap02 .img-wrap li img {
 .modal-popup-wrap .item-modal-wrap .item .list-wrap {
   padding: 0 0 0 10px;
 }
+
+.last_section {
+  height: 450px !important;
+}
+
+
+
 .modal-popup-wrap .item-modal-wrap .item .tab-wrap .tab {
   display: block;
   margin-top: 9px;
