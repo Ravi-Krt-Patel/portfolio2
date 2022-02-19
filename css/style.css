@@ -255,7 +255,7 @@ section._home .svg-wrap svg text {
   stroke-width: 1px;
   stroke-dasharray: 250px;
   text-anchor: middle;
-  dominant-baseline: middle;
+  /* dominant-baseline: middle; */
   animation: home_stroke 2s linear forwards;
 }
 section._home .svg-wrap svg text tspan {
